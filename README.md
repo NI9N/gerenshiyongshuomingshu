@@ -25,6 +25,8 @@
 
 把整个 `个人使用说明书` 文件夹放进你助手的技能目录。
 
+或用 **skills CLI 一键装(已实测 2026-09-05)**:`npx skills add NI9N/gerenshiyongshuomingshu`。装完技能 ID 是 **personal-user-manual**(取自 SKILL.md 的 name,不是仓库名),落在通用技能目录 `~/.agents/skills/`,对 Codex / Cursor / GitHub Copilot 等宿主自动生效。触发:直接说"我最近很迷茫 / 帮我做份个人使用说明书"这类意图词,在按描述匹配的宿主即可命中;要显式点名则说"用 personal-user-manual 带我走一遍"。
+
 - **workbuddy**:已于 2026-09-05 实测——触发加载与开场正常(直接进第 1 步,不再弹菜单);约 30 分钟跑通主流程,节奏与设计稿一致、无明显卡顿。收尾生成与长期维护环节,建议正式使用前再完整走一遍核验。
 - **Codex**:按 Codex 技能标准编写,放入 `~/.agents/skills/` 或对应技能目录即可使用;尚未在 Codex 宿主上实测加载与触发,装完请先实测一次(输入触发语,看是否加载、是否按指示读取 references/)。
 - **其他宿主(Claude Code 等)**:按各宿主规则放入技能目录后,**先做一次触发实测**。不同宿主对"技能名/frontmatter/文件夹命名"的规则有差异,本说明不替它们打包票。
